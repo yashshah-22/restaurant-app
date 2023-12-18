@@ -14,7 +14,7 @@ app.use((req,res,next)=>{
 
 app.use(express.json())
 app.use(cors({
-    origin:["https://deploy-mern-1whq.vercel.app"],
+    origin:["https://restaurant-app-mernstack-22.vercel.app"],
     methods:["POST","GET"],
     credentials:true
 }));
