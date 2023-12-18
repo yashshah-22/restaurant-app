@@ -9,7 +9,7 @@ const Signup = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch('restaurant-app-mernstack-22.vercel.app/api/createuser', {
+    const response = await fetch('https://restaurant-app-mernstack-22.vercel.app/api/createuser', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
