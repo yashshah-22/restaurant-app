@@ -11,7 +11,7 @@ const Home = () => {
 
   const loadData = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/foodData", {
+      const response = await fetch("restaurant-app-mernstack-22.vercel.app/api/foodData", {
         method: "POST",
         headers: {
           'Content-Type': 'application/json',
