@@ -13,7 +13,11 @@ app.use((req,res,next)=>{
 })
 
 app.use(express.json())
-app.use(cors());
+app.use(cors({
+    origin:["https://deploy-mern-1whq.vercel.app"],
+    methods:["POST","GET"],
+    credentials:true
+}));
 app.use('/api',require("./Routes/CreateUser"));
 app.use('/api',require("./Routes/DisplayData"));
 app.use('/api',require("./Routes/OrderData"));
