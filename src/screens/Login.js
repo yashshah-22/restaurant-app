@@ -8,7 +8,7 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch('http://localhost:5000/api/loginuser', {
+    const response = await fetch('restaurant-app-mernstack-22.vercel.app/api/loginuser', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
